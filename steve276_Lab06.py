@@ -48,7 +48,7 @@ ax2.legend(loc='upper left')
 ax3.bar(x, data['RBindex'], label="R-B index")
 ax3.set_xlabel('Year')
 ax3.set_ylabel('R-B Index (ratio)')
-ax3.legend(loc='upper right')
+ax3.legend()
 
 #plt.show()                        # uncomment to display in GUI upon creation
            
