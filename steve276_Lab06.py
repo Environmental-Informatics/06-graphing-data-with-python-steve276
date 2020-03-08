@@ -54,4 +54,4 @@ ax3.legend(loc='upper right')
            
 print("Enter name of PDF to be saved as <filename>. Exclude the extension. :")
 output_file = input()                  # examples : Tippecanoe_Metrics, Wildcat_Metrics
-plt.savefig('"%s".pdf' % output_file)
+plt.savefig('%s.pdf' % output_file)
