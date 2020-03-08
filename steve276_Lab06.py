@@ -51,5 +51,7 @@ ax3.set_ylabel('R-B Index (ratio)')
 ax3.legend(loc='upper right')
 
 #plt.show()                        # uncomment to display in GUI upon creation
-
-plt.savefig('Lab06.pdf')
+           
+print("Enter name of PDF to be saved as <filename>. Exclude the extension. :")
+output_file = input()                  # examples : Tippecanoe_Metrics, Wildcat_Metrics
+plt.savefig('"%s".pdf' % output_file)
