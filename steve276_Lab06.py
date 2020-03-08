@@ -17,15 +17,14 @@ import seaborn as sns                  # seaborn used for auto scaling plots
 #print(plt.style.available)            # list available matplotlib chart styles
 sns.set()                              # sets seaborn as default global style
 
-#print("Input name of file to open as 'filename'")
-#filename = input()
+print("Enter name of file to open as <filename.ext> :")
+filename = input()
 
+# expected file: either 'Tippecanoe_River_at_Ora.Annual_Metrics.txt'
+#                or     'Wildcat_Creek_at_Lafayette.Annual_Metrics.txt'
 
-data = np.genfromtxt('Tippecanoe_River_at_Ora.Annual_Metrics.txt', \
-                      names=True \
-                      )
-                                          
-                                      # names in first line taken as headers
+data = np.genfromtxt(f"{filename}", names=True)   # read input with f'string; names in first line taken as headers
+
 x = data['Year']
 
 fig, (ax1,ax2,ax3) = plt.subplots(nrows=3,ncols=1)
